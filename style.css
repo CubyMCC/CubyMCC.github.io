@@ -1,3 +1,4 @@
+/*CSS Index*/
 .navbar {
     background-color: #fff;
     height: 80px;
@@ -153,6 +154,10 @@ body {
     margin-top: -300px;
 }
 
+.custom-margin-home{
+    margin-bottom: 7%;
+}
+
 /*CSS Acerca de*/
 
 .aumento-letra{
@@ -221,6 +226,10 @@ body {
 .hero-section-about h2 {
     font-size: 1.2rem;
     text-align: center;
+}
+
+.custom-margin-about{
+    margin-bottom: 15%;
 }
 
 
@@ -318,6 +327,10 @@ body {
     text-align: center;
 }
 
+.custom-margin-contact{
+    margin-bottom: 10%;
+}
+
 
 /*CSS Proyecto*/
 
@@ -387,4 +400,8 @@ body {
 .hero-section-proyect h2 {
     font-size: 1.2rem;
     text-align: center;
+}
+
+.custom-margin-proyect{
+    margin-bottom: 10%;
 }
