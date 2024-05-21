@@ -1,0 +1,390 @@
+.navbar {
+    background-color: #fff;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: #025959;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+.login-button {
+    background-color: #025959;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover {
+    background-color: #00b383;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    /*Vista previa de las letras antes de pasarle el cursor a lo del centro*/
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #000;
+    /*Sombreado a las letras cuando colocas el cursor a lo del centro*/
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #025959;
+        /*Color de la linea horizontal que sale cuando sombreas la letra*/
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+body {
+    background-color: #fff;
+}
+
+.fondo-prueba{
+    background-color: #fff;
+}
+
+.hero-section {
+    background: url(https://media.licdn.com/dms/image/C4E12AQGU3adDAaLsYQ/article-inline_image-shrink_1500_2232/0/1633639864410?e=1719446400&v=beta&t=kgnZxtSn0bcaJ5np6vzIrlfwaxNzHG9vlEMynUiTnRg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.hero-section::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section,
+.container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 8rem;
+    /*margin-left: 2%;*/
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .hero-section h1 {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-section h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 230px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 200px) {
+    .hero-section h1 {
+        font-size: 1rem;
+    }
+}
+
+.hero-section h2 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.custom-margin-top {
+    margin-top: -200px;
+}
+
+.custom-margin-top-footer {
+    margin-top: -300px;
+}
+
+/*CSS Acerca de*/
+
+.aumento-letra{
+    font-size: 1.5rem;
+}
+
+.hero-section-about {
+    background: url(https://s1.elespanol.com/2022/01/05/como/640196313_220906797_1706x960.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.hero-section-about::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section-about,
+.container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section-about h1 {
+    font-size: 8rem;
+    /*margin-left: 2%;*/
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .hero-section-about h1 {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-section-about h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .hero-section-about h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 230px) {
+    .hero-section-about h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 200px) {
+    .hero-section-about h1 {
+        font-size: 1rem;
+    }
+}
+
+.hero-section-about h2 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+/*CSS Contacto*/
+
+.aumento-letra{
+    font-size: 1.5rem;
+}
+
+.hero-section-contact {
+    background: url(https://www.shutterstock.com/image-photo/businessman-using-smart-phone-email-600nw-2306744905.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.hero-section-contact::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section-contact,
+.container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section-contact h1 {
+    font-size: 8rem;
+    /*margin-left: 2%;*/
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .hero-section-contact h1 {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero-section-contact h1 {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-section-contact h1 {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-section-contact h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-section-contact h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .hero-section-contact h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .hero-section-contact h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 250px) {
+    .hero-section-contact h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 100px) {
+    .hero-section-contact h1 {
+        font-size: 1rem;
+    }
+}
+
+.hero-section-contact h2 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+/*CSS Proyecto*/
+
+.aumento-letra{
+    font-size: 1.5rem;
+}
+
+.hero-section-proyect {
+    background: url(https://www.factoriabiz.com/wp-content/uploads/2018/11/elegir-una-empresa-de-programacion-web.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.hero-section-proyect::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section-proyect,
+.container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section-proyect h1 {
+    font-size: 8rem;
+    /*margin-left: 2%;*/
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .hero-section-proyect h1 {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-section-proyect h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .hero-section-proyect h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 230px) {
+    .hero-section-proyect h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 200px) {
+    .hero-section-proyect h1 {
+        font-size: 1rem;
+    }
+}
+
+.hero-section-proyect h2 {
+    font-size: 1.2rem;
+    text-align: center;
+}
